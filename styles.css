@@ -7,6 +7,7 @@
 
 body{
     background-color: #f4f4fc;
+    width: 1024px;
 }
 header{
     width: 100%;
@@ -24,7 +25,9 @@ main{
     height: 90%;
     display: flex;
     justify-content: space-between;
+    
 }
+
 .contenedorCajaTexto{
     position: absolute;
     left: 200px;
@@ -92,7 +95,7 @@ main{
     position: relative;
     width: 400px;
     height: 940px;
-    right: 400px;
+    left: 200px;
     padding-right: 20px;
     background-color: #ffffff;
     border-radius: 32px;
@@ -109,11 +112,12 @@ main{
     top:570px;
     left: 40px;
 }
-.contenedorParrafo h3{
+.seccion2 h3{
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     color: #343a40;
+    padding: 25px 25px 20px 20px;
 }
 .contenedorParrafo p{
     font-weight: 400;
