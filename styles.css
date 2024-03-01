@@ -8,6 +8,7 @@
 body{
     background-color: #f4f4fc;
     width: 1024px;
+    height: 940px;
 }
 header{
     width: 100%;
@@ -94,8 +95,8 @@ main{
     display: block;
     position: relative;
     width: 400px;
-    height: 940px;
-    left: 200px;
+    height: 920px;
+    left: 300px;
     padding-right: 20px;
     background-color: #ffffff;
     border-radius: 32px;
