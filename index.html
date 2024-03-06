@@ -2,60 +2,48 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Challenge Encryptor||Decryptor</title>
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Encriptador challenge</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="imagenes/Logo.png" alt="">
+        <img class="logo" src="Imagenes/Logo-1.png" alt="logo">
     </header>
     <main>
         <section class="seccion1">
-            <div class="contenedorCajaTexto">
-                <textarea class="cajaTexto" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="contenedorcajatexto">
+                <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
             </div>
             <div class="alerta">
-                <img src="imagenes/bi_exclamation-circle-fill-1.png" alt="alerta">
+                <img src="Imagenes/bi_exclamation-circle-fill-1.png" alt="alerta">
                 <p>Solo letras minúsculas y sin acentos</p>
-
             </div>
-            <div class="contenedorBotones">
-            
+            <div class="contenedor-botones">
                 <input type="button" class="btn-encriptar" value="Encriptar">
                 <input type="button" class="btn-desencriptar" value="Desencriptar">
-
             </div>
-
         </section>
-
         <section class="seccion2">
-            
-            <div class="contenedorMuneco">
-                <img src="imagenes/Muñeco.png" alt="muneco">
+            <div class="contenedormunieco">
+                <img src="Imagenes/Muñeco.png" alt="muñico">
             </div>
-
-            <div class="contenedorParrafo">
-
+            <div class="contenedor-parrafo">
+                <h3>Nigún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
             </div>
-
-            <h3>Ningun mensaje fue <br> encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o <br>desencriptar.</p>
-            
-            <div class="contenedorCopiar">
+            <div class="contenedor-copiar">
                 <input type="button" class="btn-copiar" value="Copiar">
             </div>
-            <div class="contenedorResultado">
-                <p class="textoResultado"></p>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
             </div>
+
         </section>
     </main>
-    <footer>
-
-    </footer>
     <script src="app.js"></script>
 </body>
 </html>
