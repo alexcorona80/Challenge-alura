@@ -1,8 +1,8 @@
-var botonEncriptar = document.querySelector(".btn-encriptar");
-var botonDesencriptar = document.querySelector(".btn-desencriptar");
-var munieco = document.querySelector(".contenedormunieco");
-var contenedor = document.querySelector(".contenedor-parrafo");
-var resultado = document.querySelector(".texto-resultado");
+let botonEncriptar = document.querySelector(".btn-encriptar");
+let botonDesencriptar = document.querySelector(".btn-desencriptar");
+let munieco = document.querySelector(".contenedormunieco");
+let contenedor = document.querySelector(".contenedor-parrafo");
+let resultado = document.querySelector(".texto-resultado");
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
