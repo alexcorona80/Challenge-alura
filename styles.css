@@ -7,6 +7,10 @@
 
 body{
     background-color: #f4f4fc;
+    display: flex;
+    flex-direction: column;
+   
+    min-height: 100vh;
 }
 
 header{
@@ -188,4 +192,15 @@ main{
 
 .ocultar{
     display: none;
+}
+footer{
+    position: absolute;
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    top: 850px;
+    font-family: "Inter";
+    font-size: 1em;
+    color: #0A3871;
 }
