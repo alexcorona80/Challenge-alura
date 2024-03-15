@@ -3,6 +3,7 @@ let botonDesencriptar = document.querySelector(".btn-desencriptar");
 let munieco = document.querySelector(".contenedormunieco");
 let contenedor = document.querySelector(".contenedor-parrafo");
 let resultado = document.querySelector(".texto-resultado");
+let contenedorTexto = document.querySelector(".cajatexto");
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
@@ -93,7 +94,25 @@ function desencriptarTexto(mensaje){
 
 }
 
-const btnCopiar = document.querySelector(".btn-copiar"); 
+function expresionesRegulares(contenedorTexto){
+    let regex = /^[a-z\s]+$/;
+
+    if (!regex.test(contenedorTexto.value)) {
+        // Si la entrada no coincide con la expresión regular
+        // Mostrar un mensaje de error
+        alert("Solo se permiten letras minúsculas y espacios en este campo.");
+        // Limpiar el valor del campo
+        contenedorTexto.value = '';
+    }
+}
+
+contenedorTexto.addEventListener(contenedorTexto,function(){
+    expresionesRegulares(this);
+});
+
+
+
+ const btnCopiar = document.querySelector(".btn-copiar"); 
     btnCopiar.addEventListener("click", copiar = () => {
     var contenido = document.querySelector(".texto-resultado").textContent;
     navigator.clipboard.writeText(contenido);
